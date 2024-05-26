@@ -4,27 +4,21 @@ import util.GetPath;
 import util.Util;
 
 import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 /**
- * This class represents a graphical heart component.
- * It extends JLabel and uses an image from the specified path.
- * The image is loaded using the Util.getImageWithoutBackground method,
- * and JLabel's size is set to match the image's dimensions.
+ * Represents a Heart component with an image.
  *
  * @author Lorenzo Venturino
- * @version 1.0
+ * @version 1.1
  */
-public class Heart extends JLabel {
-	private static ImageIcon image = Util.getImageWithoutBackground(GetPath.HEART);
+public class Heart extends Component {
+	private static final ImageIcon image = Util.getImageWithoutBackground(GetPath.HEART);
 
 	/**
-	 * Constructs a new Heart object.
-	 * The heart image is set as the icon of the JLabel,
-	 * and JLabel's size is set to match the image's dimensions.
+	 * Constructs a new Heart component.
+	 * It initializes the Heart component with the loaded image.
 	 */
 	public Heart() {
-		this.setSize(image.getIconWidth(), image.getIconHeight());
-		this.setIcon(image);
+		super(image);
 	}
 }

@@ -17,4 +17,15 @@ public class Util {
 
 		return new ImageIcon(bufferedImage);
 	}
+
+	public static ImageIcon[] initializeImageIconArray(String target, int num) {
+		ImageIcon[] iconArray = new ImageIcon[num];
+		String extension = target.split("\\.")[1];
+		String fileName = target.split("\\.")[0];
+		fileName = fileName.substring(0, fileName.length() - 1);
+
+		for (int i = 0; i < num; i++) iconArray[i] = getImageWithoutBackground(fileName + i + "." + extension);
+
+		return iconArray;
+	}
 }
