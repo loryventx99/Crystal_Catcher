@@ -12,14 +12,15 @@ public class TestCuori extends JFrame {
 
 	public TestCuori() {
 		this.setTitle("Test Cuori");
-		this.setSize(800, 550);
+		this.setSize(800, 600);
 		this.setLocationRelativeTo(null);
 		this.setLayout(null);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setBackground(Color.BLACK);
 
-		Hearts h = new Hearts(120, 40, 3);
+		Hearts h = new Hearts(0, 0, 140, 55, 3);
+		h.setBackground(Color.BLUE);
 		this.add(h);
 
 		this.setVisible(true);

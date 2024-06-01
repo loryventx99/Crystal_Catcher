@@ -6,20 +6,24 @@ import util.Util;
 import javax.swing.ImageIcon;
 
 /**
- * Represents a Crystal component in the game.
- * It extends the Component class and uses an image from the util package.
+ * Represents a Crystal component of the game that extends the {@code Component} class.
  *
  * @author Lorenzo Venturino
+ * @author Gabriele Andreani
  * @version 1.1
+ * @see Component
  */
 public class Crystal extends Component {
-	private static final ImageIcon image = Util.getImageWithoutBackground(GetPath.CRYSTAL);
+	private static final ImageIcon image = Util.getImageWithoutBackgroundAndScale(GetPath.CRYSTAL, 50, 35);
 
 	/**
-	 * Constructs a new Crystal component.
-	 * It initializes the Crystal component with the loaded image.
+	 * Constructs a new {@code Crystal} component initializing it with the loaded image.
 	 */
-	public Crystal() {
-		super(image);
+	public Crystal(int x, int y) {
+		super(x, y, image);
+	}
+
+	public void caught() {
+		this.setVisible(false);
 	}
 }

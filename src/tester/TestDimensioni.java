@@ -30,7 +30,7 @@ public class TestDimensioni extends JFrame {
 		panel2.setLocation(100, 0);
 
 		JLabel label = new JLabel("1234567890");
-		label.setIcon(Util.getImageWithoutBackground(GetPath.HEART));
+		label.setIcon(Util.getImageWithoutBackgroundAndScale(GetPath.HEART, 45, 45));
 		label.setFont(new Font("Snap ITC", Font.PLAIN, 20));
 		panel2.add(label);
 

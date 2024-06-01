@@ -5,19 +5,19 @@ import util.GetPath;
 import javax.swing.ImageIcon;
 
 /**
- * This class represents a large background component.
+ * This class represents a large background component of the game that extends the {@code Component} class.
  *
  * @author Lorenzo Venturino
- * @version 1.1
+ * @version 1.0
+ * @see Component
  */
 public class BackgroundLarge extends Component {
 	private static final ImageIcon image = new ImageIcon(GetPath.BACKGROUND_LARGE);
 
 	/**
-	 * Constructs a new BackgroundLarge component.
-	 * It initializes the BackgroundLarge component with the loaded image.
+	 * Constructs a new {@code BackgroundLarge} component initializing it with the loaded image.
 	 */
 	public BackgroundLarge() {
-		super(image);
+		super(0, 0, image);
 	}
 }

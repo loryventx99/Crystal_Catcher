@@ -13,7 +13,7 @@ import java.io.IOException;
  * @version 1.0
  */
 public class FileOperations {
-	private static final File FILE = new File(GetPath.FILE);
+	private static final File file = new File(GetPath.FILE);
 
 	/**
 	 * Sets the count in the file.
@@ -22,7 +22,7 @@ public class FileOperations {
 	 */
 	public static void setCount(int count) {
 		try {
-			FileWriter fw = new FileWriter(FILE);
+			FileWriter fw = new FileWriter(file);
 			fw.write(Integer.toString(count));
 			fw.close();
 		} catch (IOException e) {
@@ -36,8 +36,7 @@ public class FileOperations {
 	 * @param count The count to be added.
 	 */
 	public static void addCount(int count) {
-		int oldCount = getCount();
-		setCount(oldCount + count);
+		setCount(getCount() + count);
 	}
 
 	/**
@@ -47,7 +46,7 @@ public class FileOperations {
 	 */
 	public static int getCount() {
 		try {
-			BufferedReader br = new BufferedReader(new FileReader(FILE));
+			BufferedReader br = new BufferedReader(new FileReader(file));
 			int count = Integer.parseInt(br.readLine());
 			br.close();
 

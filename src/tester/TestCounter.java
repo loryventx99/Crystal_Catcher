@@ -19,7 +19,7 @@ public class TestCounter extends JFrame {
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		getContentPane().setBackground(Color.BLACK);
 
-		MoneyCounter counter = new MoneyCounter(150, 40, 0);
+		MoneyCounter counter = new MoneyCounter(800 - 150, 0, 150, 40, 0);
 		counter.setLocation(650, 0);
 		this.add(counter);
 
