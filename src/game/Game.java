@@ -1,14 +1,11 @@
 package game;
 
 import components.*;
-import components.Component;
 import levels.Level1;
 import util.GetPath;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.*;
-import java.util.ArrayList;
 
 public class Game extends JFrame {
 	private MoneyCounter moneyCounter;

@@ -13,7 +13,7 @@ import javax.swing.ImageIcon;
  * @see Component
  */
 public class Platform1 extends Component {
-	private static ImageIcon image = Util.getImageWithoutBackgroundAndScale(GetPath.PLATFORM_1, 100, 35);
+	private static final ImageIcon image = Util.getImageWithoutBackgroundAndScale(GetPath.PLATFORM_1, 100, 35);
 
 	/**
 	 * Constructor for the {@code Platform1} class.
