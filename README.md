@@ -2,9 +2,8 @@
 
 ![Logo](resources/Logo.PNG)
 
-Descrizione: il gioco è una rivisitazione di Super Mario da cui eredita la logica di gioco, ma lo scenario e i personaggi sono stati ridisegnati.
-Partendo da un punto della mappa bisogna arrivare al traguardo saltando ostacoli e evitando oggetti, durante il percorso è possibile raccogliere monete e ottenere abilità temporanee speciali.
-Le monete verranno utilizzate per comprare i livelli successivi e personaggi nuovi.
+Crystal Catcher is a 2D computer game developed in Java. The purpose of the game is to collect the crystals (the game's coins) scattered around the map, to do this the character must move in the surrounding scenario by jumping from one platform (floating block of rock) to another, avoiding falling into the void.
+This is a school project developed for the "Student's Masterpiece".
 
 ## Authors
 
